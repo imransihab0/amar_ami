@@ -1,0 +1,147 @@
+@import "https://fonts.googleapis.com/css?family=Lato:100";
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Lato", Arial, sans-serif;
+}
+
+.name{
+	display: inline-block;
+	box-sizing: border-box;
+	background: #fff;
+	border: 1px solid #fff;
+	border-radius: 8px;
+	width: 150px;
+	margin-top: 0.5%;
+	letter-spacing: 2px;
+	text-align: center;
+	padding: 5px 5px;
+	font-size: 16px;
+	color: #3586ff;
+}
+
+a{
+	outline: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	color: #3586ff;
+}
+
+a:hover{
+	color: #fff;
+}
+
+#name{
+	margin-left: 16%;
+}
+
+.name:hover{
+	background: #3586ff;
+	color: #fff;
+}
+
+.main{
+	cursor: url(try.png), pointer;
+    pointer-events: auto;
+	transition: 0.5s;
+	display: inline-block;
+	position: absolute;
+	margin-left: 28%;
+	margin-top: 10%;
+	color: #fff;
+	border: 1px solid #fff;
+	text-align: center;
+	padding: 20px 30px;
+	border-radius: 10px;
+	font-size: 3rem;
+	font-family: 'Hind Siliguri', sans-serif;
+}
+
+.main:hover{
+	background: #13ad37;
+	border: 1px solid #13ad37;
+}
+
+.main:hover{
+	
+}
+
+@media screen and (max-width: 600px){
+	.main{
+		margin-left: 8%;
+		margin-right: 8%;
+	}.name{
+		display: none;
+	}
+}
+
+section{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: #3586ff;
+	overflow: hidden;
+}
+
+section .wave{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background: url(wave.png);
+	background-size: 1000px 100px;
+}
+
+section .wave.wave1{
+	animation: Animate 30s  linear infinite;
+	z-index: 1000;
+	opacity: 1;
+	animation-delay: 0s;
+	bottom: 0;
+}
+section .wave.wave2{
+	animation: Animate2 15s  linear infinite;
+	z-index: 999;
+	opacity: 0.5;
+	animation-delay: -5s;
+	bottom: 10px;
+}
+section .wave.wave3{
+	animation: Animate3 15s  linear infinite;
+	z-index: 998;
+	opacity: 0.2;
+	animation-delay: -2s;
+	bottom: 15px;
+}
+section .wave.wave4{
+	animation: Animate4 15s  linear infinite;
+	z-index: 997;
+	opacity: 0.7;
+	animation-delay: -5s;
+	bottom: 20px;
+}
+
+@keyframes Animate{
+	0%{
+		background-position: 0;
+	}
+	100%{
+		background-position: 1000px;
+	}
+}
+@keyframes Animate2{
+	0%{
+		background-position: 0;
+	}
+	100%{
+		background-position: -1000px;
+	}
+}
